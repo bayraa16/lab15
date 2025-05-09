@@ -41,4 +41,9 @@ public class MultiplicationTest {
         Multiplication calc = new Multiplication();
         assertEquals(0.0, calc.multiply(0.0, 5.0)); // Шинэ тест нэмсэн
     }
+    @Test
+    void testMultiplyWithNegativeZero() {
+        Multiplication calc = new Multiplication();
+        assertEquals(0.0, calc.multiply(0.0, 0.0)); // Шинэ тест нэмсэн
+    }
 }
