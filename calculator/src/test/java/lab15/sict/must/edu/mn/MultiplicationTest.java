@@ -1,4 +1,8 @@
+
+package edu.must.sict.lab15;
+
 package lab15.sict.must.edu.mn;
+
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
