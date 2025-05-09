@@ -1,7 +1,7 @@
 package lab15.sict.must.edu.mn;
 
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class MultiplicationTest {
     @Test
@@ -14,5 +14,15 @@ public class MultiplicationTest {
     void testMultiplyNegative() {
         Multiplication calc = new Multiplication();
         assertEquals(-6.0, calc.multiply(-2.0, 3.0));
+    }
+    @Test
+    void testMultiplyZero() {
+        Multiplication calc = new Multiplication();
+        assertEquals(0.0, calc.multiply(0.0, 3.0));
+    }
+    @Test
+    void testMultiplyNegativeZero() {
+        Multiplication calc = new Multiplication();
+        assertEquals(0.0, calc.multiply(-0.0, 3.0));
     }
 }
